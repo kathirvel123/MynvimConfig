@@ -1,6 +1,6 @@
 -- Basic settings
 vim.opt.number = true
-vim.opt.relativenumber = true
+--vim.opt.relativenumber = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
@@ -43,7 +43,7 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help ta
 
 -- vim.keymap for the neo-tree
 
-vim.keymap.set('n','<leader>vv',':Neotree filesystem reveal left<CR>',{desc ='Open Neotree'})
+vim.keymap.set('n','<leader>vv',':Neotree filesystem reveal right<CR>',{desc ='Open Neotree'})
 vim.keymap.set('n','<leader>cc',':Neotree close<CR>',{desc = 'Close NeoTree'})
 
 -- Normal mode
