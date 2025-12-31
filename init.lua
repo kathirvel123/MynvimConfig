@@ -46,6 +46,10 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help ta
 vim.keymap.set('n','<leader>vv',':Neotree filesystem reveal right<CR>',{desc ='Open Neotree'})
 vim.keymap.set('n','<leader>cc',':Neotree close<CR>',{desc = 'Close NeoTree'})
 
+-- Keymaps for bufferline
+vim.keymap.set('n', '<S-l>', ':bnext<CR>', { desc = 'Next buffer' })
+vim.keymap.set('n', '<S-h>', ':bprevious<CR>', { desc = 'Previous buffer' })
+
 -- Normal mode
 vim.keymap.set("n", "<C-z>", "u", { noremap = true, silent = true })       -- Undo
 vim.keymap.set("n", "<C-y>", "<C-r>", { noremap = true, silent = true })   -- Redo
